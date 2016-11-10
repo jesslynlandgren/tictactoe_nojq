@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tic Tac Toe</title>
+        <!-- BOOTSTRAP-->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
+        <link rel="stylesheet" href="static/css/style.css" media="screen" title="no title">
+
+        <!-- Fonts -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Londrina+Outline|Mallanna|Michroma|Raleway+Dots|Questrial|Raleway|Delius|Itim|Istok+Web|Montserrat|Coming+Soon" rel="stylesheet">
+
+
+
+    </head>
+    <body>
+        <div class="titlebox">
+            <h1 class="title text-warning">TicTacToe What</h1>
+        </div>
+        <div class="gamebox">
+            <div class="tablebox">
+                <div id="turn" class="turn text-info">
+                    PLAYER 1 - IT'S YOUR MOVE!
+                </div>
+                <table id="table" class="table2">
+                    <tr class="tablerow row1">
+                        <td><button class="btn btn-default cell" type="button" name="button"></button></td>
+                        <td><button class="btn btn-default cell" type="button" name="button"></button></td>
+                        <td><button class="btn btn-default cell" type="button" name="button"></button></td>
+                    </tr>
+                    <tr class="tablerow row2">
+                        <td><button class="btn btn-default cell" type="button" name="button"></button></td>
+                        <td><button class="btn btn-default cell" type="button" name="button"></button></td>
+                        <td><button class="btn btn-default cell" type="button" name="button"></button></td>
+                    </tr>
+                    <tr class="tablerow row3">
+                        <td><button class="btn btn-default cell" type="button" name="button"></button></td>
+                        <td><button class="btn btn-default cell" type="button" name="button"></button></td>
+                        <td><button class="btn btn-default cell" type="button" name="button"></button></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="winCount">
+                <h1 class="text-info">Player 1</h1>
+                <div class="wlcount player1">
+                    <span class="bold">Win:</span>
+                    <span class="wincount">0</span>
+                    <span class="bold">Loss:</span>
+                    <span class="losscount">0</span>
+                    <span class="bold">Draw:</span>
+                    <span class="drawcount">0</span>
+                </div>
+                <h1 class="text-success">Player 2</h1>
+                <div class="wlcount player2">
+                    <span class="bold">Win:</span>
+                    <span class="wincount">0</span>
+                    <span class="bold">Loss:</span>
+                    <span class="losscount">0</span>
+                    <span class="bold">Draw:</span>
+                    <span class="drawcount">0</span>
+                </div>
+                <span id="message" class="message">Get Playing</span>
+                <div class="buttons">
+                    <button id="pause" class="btn btn-danger pause" type="button" name="button"><i class="fa fa-pause"></i></button>
+                    <a href="index.html" class="startOver"><button class="btn btn-warning" type="button" name="button">Start Over</button></a>
+                </div>
+            </div>
+        </div>
+        <div id="winmodal" class="modal" data-keyboard="false" data-backdrop="static">
+            <div class="modal-dialog">
+                <div id="modalback" class="alert">
+                    <div class="">
+                        <p id="winner" class="winner"></p>
+                        <button id="playagain" type="button" class="btn btn-warning playagain">Play Again</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="pause-modal" class="modal fade" data-keyboard="false" data-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <p class="textpause">GAME PAUSED</p>
+                        <button id="resume" type="button" class="btn btn-warning resume"><i class="fa fa-play"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Tic Tac Toe-->
+    <script src="static/js/tictactoe.js"></script>
+</html>
